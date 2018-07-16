@@ -10,11 +10,11 @@ public class JDBCUtil {
     //Driver类全名
     public static String DRIVER="com.mysql.jdbc.Driver";
     //jdbc协议:子协议://ip:端口号/数据库名
-    public static String URL="jdbc:mysql://localhost:3306/test";
+    public static String URL="jdbc:mysql://localhost:3306/test2";
     //数据库用户名
     public static String USERNAME="root";
     //数据库密码
-    public static String PASSWORD="root";
+    public static String PASSWORD="123456789mmm";
 
     private static Connection connection=null;
 
