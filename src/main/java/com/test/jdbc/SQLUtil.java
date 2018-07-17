@@ -9,7 +9,7 @@ import java.util.Map;
 public class SQLUtil {
 
 
-    public static String createSql(Map<String, String> map, int operate, String tableName){
+    public static String createSql(Map<String, String> map, String tableName){
         String sql = "insert into " + tableName + " (";
         List<String> valueList = new ArrayList<String>(map.size());
         int count = 1;

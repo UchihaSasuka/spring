@@ -18,7 +18,7 @@ public class MyClient {
         map.put("A","1");
         map.put("B","2");
         map.put("C","3");
-        String sql=SQLUtil.createSql(map,SQLUtil.INSERT,"test");
+        String sql=SQLUtil.createSql(map,"test");
         statement.executeUpdate(sql);
     }
 }
