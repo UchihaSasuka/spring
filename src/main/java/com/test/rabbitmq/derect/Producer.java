@@ -9,7 +9,7 @@ import java.util.concurrent.TimeoutException;
 
 public class Producer {
 
-    private static final String EXCHANGE_NAME = "test_exchange_fanout";
+    private static final String EXCHANGE_NAME = "test_exchange_direct";
 
     public static void main(String[] args) {
         Connection connection = null;
@@ -22,8 +22,8 @@ public class Producer {
             channel.exchangeDeclare(EXCHANGE_NAME, "direct");
 
             //创建消息
-            String message = "删除商品， id = 101";
-            channel.basicPublish(EXCHANGE_NAME, "delete", null, message.getBytes());
+            String message = "更新商品， id = 101";
+            channel.basicPublish(EXCHANGE_NAME, "update1", null, message.getBytes());
             System.out.println("已发送消息：" + message);
 
         } catch (IOException e) {
