@@ -37,5 +37,28 @@
     <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.4.2" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.25" level="project" />
     <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:4.4.2" level="project" />
+    <orderEntry type="library" name="Maven: dom4j:dom4j:1.5" level="project" />
+    <orderEntry type="library" name="Maven: jaxme:jaxme-api:0.3" level="project" />
+    <orderEntry type="library" name="Maven: jaxen:jaxen:1.1-beta-4" level="project" />
+    <orderEntry type="library" name="Maven: jdom:jdom:b10" level="project" />
+    <orderEntry type="library" name="Maven: xerces:xmlParserAPIs:2.6.2" level="project" />
+    <orderEntry type="library" name="Maven: xerces:xercesImpl:2.6.2" level="project" />
+    <orderEntry type="library" name="Maven: xom:xom:1.0b3" level="project" />
+    <orderEntry type="library" name="Maven: com.ibm.icu:icu4j:2.6.1" level="project" />
+    <orderEntry type="library" name="Maven: xalan:xalan:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.ccil.cowan.tagsoup:tagsoup:0.9.7" level="project" />
+    <orderEntry type="library" name="Maven: msv:xsdlib:20030807" level="project" />
+    <orderEntry type="library" name="Maven: msv:relaxngDatatype:20030807" level="project" />
+    <orderEntry type="library" name="Maven: pull-parser:pull-parser:2" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml:jsr173:1.0" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.0.b2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml:3.15" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi:3.15" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-collections4:4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml-schemas:3.15" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.virtuald:curvesapi:1.04" level="project" />
   </component>
 </module>
