@@ -12,13 +12,17 @@ public class Test{
 
     @org.junit.Test
     public void test() throws Exception {
-        Map<String, String> map = new HashMap<String, String>();
-        map.put("A","1");
-        map.put("B","2");
-        map.put("C","3");
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("A","4");
+        map.put("B","5");
+        map.put("C","6");
         String json = JSON.toJSONString(map);
-        Operator operator = new InsertOperator(new InsertSqlBuild());
-        operator.operator(json, "user");
+        Map<String, Object> map2 = new HashMap<String, Object>();
+        map2.put("id",1);
+        Example example = new Example();
+        example.setAnds(map2);
+        Operator operator = new OperatorImpl(new UpdateBuilder());
+        operator.operator(json, "user", example);
     }
 
 }

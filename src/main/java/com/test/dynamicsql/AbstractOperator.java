@@ -41,14 +41,14 @@ public abstract class AbstractOperator implements Operator{
     }
 
     public Object operator(String json, String tableName) throws Exception {
-        Statement statement = connection.createStatement();
-        Object result = doOperator(statement, json, tableName);
-        closeConnection();
-        return result;
+        return operator(json, tableName, null);
     }
 
     public Object operator(String json, String tableName, Example e) throws Exception{
-        return null;
+        Statement statement = connection.createStatement();
+        Object result = doOperator(statement, json, tableName, e);
+        closeConnection();
+        return result;
     }
 
     protected void closeConnection(){
@@ -60,8 +60,6 @@ public abstract class AbstractOperator implements Operator{
             e.printStackTrace();
         }
     }
-
-    public abstract Object doOperator(Statement statement, String json, String tableName) throws Exception;
 
     public abstract Object doOperator(Statement statement, String json, String tableName, Example example) throws Exception;
 }

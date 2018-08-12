@@ -10,9 +10,9 @@ import java.util.Map;
 /**
  * Created by wiseacre on 2018/7/31.
  */
-public class InsertSqlBuild implements SqlBuilder{
+public class InsertSqlBuilder implements SqlBuilder{
 
-    public String build(String json, String tableName) {
+    public String build(String json, String tableName, Example example) {
         Map map = JSON.parseObject(json);
         String sql = "insert into " + tableName + " (";
         List<String> valueList = new ArrayList<String>(map.size());

@@ -5,5 +5,5 @@ package com.test.dynamicsql;
  */
 public interface SqlBuilder {
 
-    String build(String json, String tableName);
+    String build(String json, String tableName, Example example);
 }

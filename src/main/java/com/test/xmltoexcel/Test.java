@@ -11,8 +11,8 @@ public class Test {
     public static void main(String[] args) throws DocumentException, IOException {
         Map<String, String> map = XmlUtil.xmlToMap("D:\\abc.xml");
         String path = "D:\\abc.xlsx";
-        List<String> keys = new ArrayList<>(map.size());
-        List<Map<String, String>> list = new ArrayList<>();
+        List<String> keys = new ArrayList<String>(map.size());
+        List<Map<String, String>> list = new ArrayList<Map<String, String>>();
         list.add(map);
         for(String key : map.keySet()){
             keys.add(key);

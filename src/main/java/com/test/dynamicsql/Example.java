@@ -1,29 +1,30 @@
 package com.test.dynamicsql;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by wiseacre on 2018/7/31.
  */
 public class Example {
 
-    private List<Object> ands;
+    private Map<String, Object> ands;
 
-    private List<Object> ors;
+    private Map<String, Object> ors;
 
-    public List<Object> getAnds() {
+    public Map<String, Object> getAnds() {
         return ands;
     }
 
-    public void setAnds(List<Object> ands) {
+    public void setAnds(Map<String, Object> ands) {
         this.ands = ands;
     }
 
-    public List<Object> getOrs() {
+    public Map<String, Object> getOrs() {
         return ors;
     }
 
-    public void setOrs(List<Object> ors) {
+    public void setOrs(Map<String, Object> ors) {
         this.ors = ors;
     }
 }
